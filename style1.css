@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+    font-family: sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100%;
+    height: 100vh; /* Ensure the page takes up the full viewport height */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Ensure content flows vertically */
+    overflow: hidden; /* Hide any overflow from children elements */
+}
+
+.background {
+    flex: 1; /* Make background container take up available space */
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100%; /* Ensure image covers the entire container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block; /* Removes any unwanted gaps below the image */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 14px;
+    width: 100%;
+    position: absolute;
+    top: 0; /* Position navbar at the top */
+    z-index: 10;
+}
+
+/*-----------------navbar buttons and logo------------*/
+
+.logo {
+    width: 145px;
+    color: white;
+    cursor: pointer;
+}
+
+.navicons button {
+    width: 24px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.navicons button:hover{
+    background-color: rgb(59, 98, 146);
+}
+
+.navbuttons button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbuttons button:hover{
+    background-color: rgb(59, 98, 146);
+}
+
+/*-----------------nav bar divs ------------*/
+
+.navbuttons {
+    margin-left: 520px;
+    margin-right: 580px;
+}
+
+.orderbutton {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    padding: 40px;
+    
+}
+
+.order {
+    background-color: rgb(62, 106, 225);
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.demo {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(57, 60, 65);
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    left: 36%;
+    top: 220px;
+}
+
+h1 {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1, h2, h4 {
+    color: white;
+}
+.footer{
+    background-color: black;
+    padding: 20px 650px;
+    padding-bottom: 0px;
+}
+.para{
+    color: white;font-size: 12px;
+    text-align: center;
+    padding: 10px;
+
+}
+.order5{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(162, 163, 165);
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.learnmore{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(162, 163, 165);
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.orderbutton9 button{
+    background-color: rgb(62, 106, 225);
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.orderbutton9{
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    padding: 40px;
+}
+#text3{
+    left: 41%;
+}
+#text4{
+    left: 43%;
+}
+#text6{
+    left: 40%;
+}
+#text7{
+    left: 37%;
+}
+#text8{
+    left: 43%;
+}
+#text9{
+    left: 42%;
+}
+.footer1{
+    color: white;font-size: 12px;
+    text-align: center;
+    display: flex;
+    
+}
+.footer1 div{
+    padding: 10px;
+    cursor: pointer;
+}
